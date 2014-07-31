@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B217DEE198A8789006FD66D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B217DED198A8789006FD66D /* UIKit.framework */; };
+		4B217DF0198A8789006FD66D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B217DEF198A8789006FD66D /* Foundation.framework */; };
+		4B217DF2198A8789006FD66D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B217DF1198A8789006FD66D /* CoreGraphics.framework */; };
+		4B217DF8198A8789006FD66D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B217DF6198A8789006FD66D /* InfoPlist.strings */; };
+		4B217DFA198A878A006FD66D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B217DF9198A8789006FD66D /* main.m */; };
+		4B217DFE198A878A006FD66D /* LCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B217DFD198A878A006FD66D /* LCAppDelegate.m */; };
+		4B217E00198A878A006FD66D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B217DFF198A878A006FD66D /* Default.png */; };
+		4B217E02198A878A006FD66D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B217E01198A878A006FD66D /* Default@2x.png */; };
+		4B217E04198A878A006FD66D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B217E03198A878A006FD66D /* Default-568h@2x.png */; };
+		4B217E0D198A87B8006FD66D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B217E0B198A87B8006FD66D /* RootViewController.m */; };
+		4B217E0E198A87B8006FD66D /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B217E0C198A87B8006FD66D /* RootViewController.xib */; };
+		4B217E11198A8806006FD66D /* LCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B217E10198A8806006FD66D /* LCAlertView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B217DEA198A8789006FD66D /* LCAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B217DED198A8789006FD66D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4B217DEF198A8789006FD66D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4B217DF1198A8789006FD66D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4B217DF5198A8789006FD66D /* LCAlertView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LCAlertView-Info.plist"; sourceTree = "<group>"; };
+		4B217DF7198A8789006FD66D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4B217DF9198A8789006FD66D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B217DFB198A878A006FD66D /* LCAlertView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LCAlertView-Prefix.pch"; sourceTree = "<group>"; };
+		4B217DFC198A878A006FD66D /* LCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAppDelegate.h; sourceTree = "<group>"; };
+		4B217DFD198A878A006FD66D /* LCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAppDelegate.m; sourceTree = "<group>"; };
+		4B217DFF198A878A006FD66D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4B217E01198A878A006FD66D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4B217E03198A878A006FD66D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4B217E0A198A87B8006FD66D /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		4B217E0B198A87B8006FD66D /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		4B217E0C198A87B8006FD66D /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		4B217E0F198A8806006FD66D /* LCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAlertView.h; sourceTree = "<group>"; };
+		4B217E10198A8806006FD66D /* LCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAlertView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B217DE7198A8789006FD66D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B217DEE198A8789006FD66D /* UIKit.framework in Frameworks */,
+				4B217DF0198A8789006FD66D /* Foundation.framework in Frameworks */,
+				4B217DF2198A8789006FD66D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B217DE1198A8789006FD66D = {
+			isa = PBXGroup;
+			children = (
+				4B217DF3198A8789006FD66D /* LCAlertView */,
+				4B217DEC198A8789006FD66D /* Frameworks */,
+				4B217DEB198A8789006FD66D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B217DEB198A8789006FD66D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B217DEA198A8789006FD66D /* LCAlertView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B217DEC198A8789006FD66D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B217DED198A8789006FD66D /* UIKit.framework */,
+				4B217DEF198A8789006FD66D /* Foundation.framework */,
+				4B217DF1198A8789006FD66D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B217DF3198A8789006FD66D /* LCAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				4B217DFC198A878A006FD66D /* LCAppDelegate.h */,
+				4B217DFD198A878A006FD66D /* LCAppDelegate.m */,
+				4B217E0A198A87B8006FD66D /* RootViewController.h */,
+				4B217E0B198A87B8006FD66D /* RootViewController.m */,
+				4B217E0C198A87B8006FD66D /* RootViewController.xib */,
+				4B217E0F198A8806006FD66D /* LCAlertView.h */,
+				4B217E10198A8806006FD66D /* LCAlertView.m */,
+				4B217DF4198A8789006FD66D /* Supporting Files */,
+			);
+			path = LCAlertView;
+			sourceTree = "<group>";
+		};
+		4B217DF4198A8789006FD66D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B217DF5198A8789006FD66D /* LCAlertView-Info.plist */,
+				4B217DF6198A8789006FD66D /* InfoPlist.strings */,
+				4B217DF9198A8789006FD66D /* main.m */,
+				4B217DFB198A878A006FD66D /* LCAlertView-Prefix.pch */,
+				4B217DFF198A878A006FD66D /* Default.png */,
+				4B217E01198A878A006FD66D /* Default@2x.png */,
+				4B217E03198A878A006FD66D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B217DE9198A8789006FD66D /* LCAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B217E07198A878A006FD66D /* Build configuration list for PBXNativeTarget "LCAlertView" */;
+			buildPhases = (
+				4B217DE6198A8789006FD66D /* Sources */,
+				4B217DE7198A8789006FD66D /* Frameworks */,
+				4B217DE8198A8789006FD66D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LCAlertView;
+			productName = LCAlertView;
+			productReference = 4B217DEA198A8789006FD66D /* LCAlertView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B217DE2198A8789006FD66D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LC;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = lc;
+			};
+			buildConfigurationList = 4B217DE5198A8789006FD66D /* Build configuration list for PBXProject "LCAlertView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4B217DE1198A8789006FD66D;
+			productRefGroup = 4B217DEB198A8789006FD66D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B217DE9198A8789006FD66D /* LCAlertView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B217DE8198A8789006FD66D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B217DF8198A8789006FD66D /* InfoPlist.strings in Resources */,
+				4B217E00198A878A006FD66D /* Default.png in Resources */,
+				4B217E02198A878A006FD66D /* Default@2x.png in Resources */,
+				4B217E04198A878A006FD66D /* Default-568h@2x.png in Resources */,
+				4B217E0E198A87B8006FD66D /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B217DE6198A8789006FD66D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B217DFA198A878A006FD66D /* main.m in Sources */,
+				4B217DFE198A878A006FD66D /* LCAppDelegate.m in Sources */,
+				4B217E0D198A87B8006FD66D /* RootViewController.m in Sources */,
+				4B217E11198A8806006FD66D /* LCAlertView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4B217DF6198A8789006FD66D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B217DF7198A8789006FD66D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B217E05198A878A006FD66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B217E06198A878A006FD66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B217E08198A878A006FD66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LCAlertView/LCAlertView-Prefix.pch";
+				INFOPLIST_FILE = "LCAlertView/LCAlertView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4B217E09198A878A006FD66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LCAlertView/LCAlertView-Prefix.pch";
+				INFOPLIST_FILE = "LCAlertView/LCAlertView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B217DE5198A8789006FD66D /* Build configuration list for PBXProject "LCAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B217E05198A878A006FD66D /* Debug */,
+				4B217E06198A878A006FD66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B217E07198A878A006FD66D /* Build configuration list for PBXNativeTarget "LCAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B217E08198A878A006FD66D /* Debug */,
+				4B217E09198A878A006FD66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B217DE2198A8789006FD66D /* Project object */;
+}
