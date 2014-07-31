@@ -7,13 +7,14 @@ LCAlertview like the system alertview
 2. it can rotate with the screen
 3. like the system alertview, use easy
 
- LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"hello" 
+LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"hello" 
                                           message:@"are you ready" 
                                           delegate:self 
                                           cancelButtonTitle:@"cancle" 
                                           otherButtonTitles:@"sure",nil];
- [alert show];
- [alert release];
+
+[alert show];
+[alert release];
 
 ps: i refer to the DXAlertView（https://github.com/xiekw2010/DXAlertView）
 
