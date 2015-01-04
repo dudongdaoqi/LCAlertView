@@ -27,19 +27,32 @@
 {
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"网路不稳定" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
     [alert show];
-    [alert release];
 }
-- (IBAction)LCAlertAction:(id)sender
+
+- (IBAction)blockAlert:(id)sender
 {
     LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"提示" message:@"网路不稳定" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
     //alert.alertAnimationStyle = LCAlertAnimationFlipHorizontal;
+    alert.alertAction = ^(NSInteger buttonIndex){
+        NSLog(@"alert:%lu",buttonIndex);
+    };
     [alert show];
-    [alert release];
 
 }
-- (void)alertView:(LCAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    NSLog(@"alert:%i",buttonIndex);
+
+- (IBAction)LCAlertAction:(id)sender
+{
+    LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"提示" message:@"网路不稳定" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
+    alert.alertAnimationStyle = LCAlertAnimationFlipHorizontal;
+    [alert show];
 }
+
+- (void)alertView:(LCAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"alert:%lu",buttonIndex);
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

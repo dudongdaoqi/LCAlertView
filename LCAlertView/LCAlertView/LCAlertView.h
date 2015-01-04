@@ -15,6 +15,18 @@ typedef NS_ENUM(NSInteger, LCAlertAnimation) {
 	LCAlertAnimationFlipVertical,
 };
 
+
+/**
+ *  block way for back action
+ */
+
+typedef void(^AlertAction)(NSInteger buttonIndex);
+
+
+/**
+ *  delegate way for back action
+ */
+
 @class LCAlertView;
 @protocol  LCAlertViewDelegate <NSObject>
 // Called when a button is clicked. The view will be automatically dismissed after this call returns
@@ -35,11 +47,11 @@ typedef NS_ENUM(NSInteger, LCAlertAnimation) {
     UIButton *_leftBtn;
 }
 
-@property(nonatomic,assign) id/*<LCAlertViewDelegate>*/ delegate;
+@property(nonatomic,assign) id<LCAlertViewDelegate> delegate;
 @property(nonatomic,copy) NSString *title;
 @property(nonatomic,copy) NSString *message;   // secondary explanation text
 @property(nonatomic,assign) LCAlertAnimation alertAnimationStyle;
-
+@property (nonatomic, strong) AlertAction alertAction;
 
 - (id)initWithTitle:(NSString *)title message:(NSString *)message delegate:(id/*<LCAlertViewDelegate>*/)delegate cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION;
 // shows popup alert animated.

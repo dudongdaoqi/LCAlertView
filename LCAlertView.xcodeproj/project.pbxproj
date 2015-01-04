@@ -18,7 +18,7 @@
 		4B217E04198A878A006FD66D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B217E03198A878A006FD66D /* Default-568h@2x.png */; };
 		4B217E0D198A87B8006FD66D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B217E0B198A87B8006FD66D /* RootViewController.m */; };
 		4B217E0E198A87B8006FD66D /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B217E0C198A87B8006FD66D /* RootViewController.xib */; };
-		4B217E11198A8806006FD66D /* LCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B217E10198A8806006FD66D /* LCAlertView.m */; };
+		768469331A590A410031B975 /* LCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 768469321A590A410031B975 /* LCAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +38,8 @@
 		4B217E0A198A87B8006FD66D /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		4B217E0B198A87B8006FD66D /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		4B217E0C198A87B8006FD66D /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
-		4B217E0F198A8806006FD66D /* LCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAlertView.h; sourceTree = "<group>"; };
-		4B217E10198A8806006FD66D /* LCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAlertView.m; sourceTree = "<group>"; };
+		768469311A590A410031B975 /* LCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAlertView.h; sourceTree = "<group>"; };
+		768469321A590A410031B975 /* LCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +91,7 @@
 				4B217E0A198A87B8006FD66D /* RootViewController.h */,
 				4B217E0B198A87B8006FD66D /* RootViewController.m */,
 				4B217E0C198A87B8006FD66D /* RootViewController.xib */,
-				4B217E0F198A8806006FD66D /* LCAlertView.h */,
-				4B217E10198A8806006FD66D /* LCAlertView.m */,
+				768469301A590A410031B975 /* LCAlertView */,
 				4B217DF4198A8789006FD66D /* Supporting Files */,
 			);
 			path = LCAlertView;
@@ -110,6 +109,15 @@
 				4B217E03198A878A006FD66D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		768469301A590A410031B975 /* LCAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				768469311A590A410031B975 /* LCAlertView.h */,
+				768469321A590A410031B975 /* LCAlertView.m */,
+			);
+			path = LCAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,10 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768469331A590A410031B975 /* LCAlertView.m in Sources */,
 				4B217DFA198A878A006FD66D /* main.m in Sources */,
 				4B217DFE198A878A006FD66D /* LCAppDelegate.m in Sources */,
 				4B217E0D198A87B8006FD66D /* RootViewController.m in Sources */,
-				4B217E11198A8806006FD66D /* LCAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +267,7 @@
 		4B217E08198A878A006FD66D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LCAlertView/LCAlertView-Prefix.pch";
 				INFOPLIST_FILE = "LCAlertView/LCAlertView-Info.plist";
@@ -271,6 +280,7 @@
 		4B217E09198A878A006FD66D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LCAlertView/LCAlertView-Prefix.pch";
 				INFOPLIST_FILE = "LCAlertView/LCAlertView-Info.plist";

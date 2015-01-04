@@ -57,7 +57,7 @@
 @synthesize title = _title;
 @synthesize message = _message;
 @synthesize alertAnimationStyle = _alertAnimationStyle;
-
+@synthesize alertAction = _alertAction;
 
 - (id)initWithTitle:(NSString *)title message:(NSString *)message delegate:(id /*<UIAlertViewDelegate>*/)delegate cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION
 {
@@ -153,7 +153,6 @@
             }
         }
 
-        [otherBtns release];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:)
                                                      name:UIDeviceOrientationDidChangeNotification object:nil];
@@ -249,7 +248,7 @@
             float height = kTitleYOffset+kTitleHeight+60+_buttons.count*kButtonHeight+kButtonBottomOffset;
             float trueHeight = 390.5>height?height:390.5;
             self.frame = CGRectMake((CGRectGetWidth([UIScreen mainScreen].bounds) - kAlertWidth) * 0.5, 0, kAlertWidth, trueHeight);
-            for (int i = _buttons.count-1; i >= 0; i--) {
+            for (int i = (int)_buttons.count - 1; i >= 0; i--) {
                 UIButton *btn = [_buttons objectAtIndex:i];
                 btn.frame = CGRectMake((kAlertWidth - kSingleButtonWidth) * 0.5, trueHeight - kButtonBottomOffset - kButtonHeight * (_buttons.count-i), kSingleButtonWidth, kButtonHeight-kButtonOffset);
             }
@@ -429,7 +428,6 @@
     UIInterfaceOrientation orientation = [[UIApplication sharedApplication]statusBarOrientation];
     
     [UIView animateWithDuration:0.0f delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        
         [self setupFrame];
         self.center = _originalWindow.center;
         [self roate:orientation sacle:0.1];
@@ -474,7 +472,6 @@
 {
     [self removeFromSuperview];
     [_backgroundView removeFromSuperview];
-    [_originalWindow release];
     _originalWindow = nil;
     [[[[UIApplication sharedApplication] delegate] window] makeKeyWindow];
 }
@@ -482,11 +479,15 @@
 - (void)buttonClick:(id)sender
 {
     UIButton *button = (UIButton *)sender;
-    if ([self.delegate respondsToSelector:@selector(alertView:clickedButtonAtIndex:)]) {
+    
+    if ([self.delegate respondsToSelector:@selector(alertView:clickedButtonAtIndex:)]){
         [self.delegate alertView:self clickedButtonAtIndex:button.tag];
     }
-
     
+    if (self.alertAction) {
+        self.alertAction(button.tag);
+    }
+
     if (_alertAnimationStyle ==LCAlertAnimationDefault) {
          [self defaultHideView];
     }else if (_alertAnimationStyle ==LCAlertAnimationFlipVertical){
@@ -501,12 +502,6 @@
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-    [_buttons release];
-    [_originalWindow release];
-    [_backgroundView release];
-    [_alertContentLabel release];
-    [_alertTitleLabel release];
-    [super dealloc];
 }
 
 @end
