@@ -11,6 +11,8 @@ This alert provides a alertview like system using ARC model.
 How To Use
 ----------
 
+```objective-c
+
 #import "LCAlertView.h"
 
 LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"hello" message:@"are you ready" delegate:self cancelButtonTitle:@"cancle" otherButtonTitles:@"sure",nil];
