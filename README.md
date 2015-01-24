@@ -5,6 +5,8 @@ LCAlertview like the system alertview
 1. uses for iphone and ipad
 2. it can rotate with the screen
 3. like the system alertview, use easy
+4. you can use block style in 2.0
+5. three kinds of animation mode:Default/FlipHorizontal/FlipVertical
 
 This alert provides a alertview like system using ARC model.
 
@@ -30,3 +32,30 @@ LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"hello" message:@"are yo
 {
     NSLog(@"alert:%lu",buttonIndex);
 }
+```
+
+### Using blocks
+
+```objective-c
+
+    LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"提示" message:@"网路不稳定" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
+    alert.alertAction = ^(NSInteger buttonIndex){
+        NSLog(@"alert:%lu",buttonIndex);
+    };
+    [alert show];
+```
+
+### Animation Mode
+
+```objective-c
+
+typedef NS_ENUM(NSInteger, LCAlertAnimation) {
+    LCAlertAnimationDefault = 0,
+    LCAlertAnimationFlipHorizontal,
+	LCAlertAnimationFlipVertical,
+};
+
+  alert.alertAnimationStyle = LCAlertAnimationFlipHorizontal;
+
+```
+

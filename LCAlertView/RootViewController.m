@@ -25,24 +25,23 @@
 }
 - (IBAction)defaultAlertAction:(id)sender
 {
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"网路不稳定" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Warm" message:@"net is bad" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:@"Cancel",nil];
     [alert show];
 }
 
 - (IBAction)blockAlert:(id)sender
 {
-    LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"提示" message:@"网路不稳定" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
+    LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"Warm" message:@"net is bad" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK",nil];
     //alert.alertAnimationStyle = LCAlertAnimationFlipHorizontal;
     alert.alertAction = ^(NSInteger buttonIndex){
         NSLog(@"alert:%lu",buttonIndex);
     };
     [alert show];
-
 }
 
 - (IBAction)LCAlertAction:(id)sender
 {
-    LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"提示" message:@"网路不稳定" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
+    LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"Warm" message:@"net is bad" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK",nil];
     alert.alertAnimationStyle = LCAlertAnimationFlipHorizontal;
     [alert show];
 }
