@@ -47,6 +47,8 @@
     [alert show];
 }
 
+#pragma mark delegate
+
 - (void)alertView:(LCAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     NSLog(@"alert:%lu",buttonIndex);

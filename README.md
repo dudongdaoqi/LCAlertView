@@ -1,21 +1,24 @@
 LCAlertView
-===========
-
+=========
 LCAlertview like the system alertview
 
 1. uses for iphone and ipad
 2. it can rotate with the screen
 3. like the system alertview, use easy
 
-LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"hello" 
-                                          message:@"are you ready" 
-                                          delegate:self 
-                                          cancelButtonTitle:@"cancle" 
-                                          otherButtonTitles:@"sure",nil];
+This alert provides a alertview like system using ARC model.
 
-[alert show];
-[alert release];
+How To Use
+----------
 
-ps: i refer to the DXAlertView（https://github.com/xiekw2010/DXAlertView）
+#import "LCAlertView.h"
 
-![hori](https://github.com/dudongdaoqi/LCAlertView/blob/master/image.png)
+LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"hello" message:@"are you ready" delegate:self cancelButtonTitle:@"cancle" otherButtonTitles:@"sure",nil];
+[alert show]; 
+
+#pragma mark delegate
+
+- (void)alertView:(LCAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"alert:%lu",buttonIndex);
+}
