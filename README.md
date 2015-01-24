@@ -8,6 +8,11 @@ LCAlertview like the system alertview
 
 This alert provides a alertview like system using ARC model.
 
+Release
+----------
+[1.0](https://github.com/dudongdaoqi/LCAlertView/tree/1.0) ios4.3 MRC
+[2.0](https://github.com/dudongdaoqi/LCAlertView/releases/tag/v2.0) ios5.0 ARC
+
 How To Use
 ----------
 
