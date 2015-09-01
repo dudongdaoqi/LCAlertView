@@ -20,6 +20,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		7646CBEC1B95B253003FD16B /* watch_bind.png in Resources */ = {isa = PBXBuildFile; fileRef = 7646CBEB1B95B253003FD16B /* watch_bind.png */; };
+		7646CBEE1B95B2E1003FD16B /* confirm_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7646CBED1B95B2E0003FD16B /* confirm_delete@2x.png */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		CE3E76E3DFAF24775929D4C1 /* Pods_LCAlertView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC31C2E3F278C968F7F29D4 /* Pods_LCAlertView_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FE0E5AB197103460BE28C95E /* Pods_LCAlertView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40880D1CDDB7F960BE87F772 /* Pods_LCAlertView_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -61,6 +63,8 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		7646CBEB1B95B253003FD16B /* watch_bind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = watch_bind.png; sourceTree = "<group>"; };
+		7646CBED1B95B2E0003FD16B /* confirm_delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "confirm_delete@2x.png"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E552DD2D72690E58C1323C79 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E995AD3B58D627EF7A80FCD8 /* Pods-LCAlertView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCAlertView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LCAlertView_Example/Pods-LCAlertView_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 		6003F593195388D20070C39A /* Example for LCAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				7646CBEB1B95B253003FD16B /* watch_bind.png */,
+				7646CBED1B95B2E0003FD16B /* confirm_delete@2x.png */,
 				6003F59C195388D20070C39A /* LCAppDelegate.h */,
 				6003F59D195388D20070C39A /* LCAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -276,6 +282,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7646CBEE1B95B2E1003FD16B /* confirm_delete@2x.png in Resources */,
+				7646CBEC1B95B253003FD16B /* watch_bind.png in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
