@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version          = "2.1.0"
   s.summary          = "LCAlertView like syetem" 
   s.description      = <<-DESC
-                       AlertView like system
+                       AlertView like system a ha!
                        DESC
   s.homepage         = "https://github.com/dudongdaoqi/LCAlertView"
   s.license          = 'MIT'
