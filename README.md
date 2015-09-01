@@ -39,6 +39,8 @@ Release
 
 [2.0](https://github.com/dudongdaoqi/LCAlertView/releases/tag/v2.0) ios5.0 ARC
 
+[2.1.0](https://github.com/dudongdaoqi/LCAlertView/releases/tag/2.1.0) ios5.0 cocopods
+
 How To Use
 ----------
 
