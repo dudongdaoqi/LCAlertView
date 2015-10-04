@@ -40,7 +40,7 @@ Release
 
 [2.0](https://github.com/dudongdaoqi/LCAlertView/releases/tag/v2.0) ios5.0 ARC
 
-[2.1.0](https://github.com/dudongdaoqi/LCAlertView/releases/tag/2.1.0) ios5.0 cocopods
+[2.1](https://github.com/dudongdaoqi/LCAlertView/releases/tag/2.1.0) ios5.0 cocopods
 
 How To Use
 ----------
@@ -56,11 +56,7 @@ LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"hello" message:@"are yo
 
 - (void)alertView:(LCAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-<<<<<<< HEAD
-    NSLog(@"alert:%lu",buttonIndex);
-=======
 NSLog(@"alert:%lu",buttonIndex);
->>>>>>> cocopods
 }
 ```
 
@@ -68,19 +64,12 @@ NSLog(@"alert:%lu",buttonIndex);
 
 ```objective-c
 
-<<<<<<< HEAD
-    LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"提示" message:@"网路不稳定" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
-    alert.alertAction = ^(NSInteger buttonIndex){
-        NSLog(@"alert:%lu",buttonIndex);
-    };
-    [alert show];
-=======
-LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"提示" message:@"网路不稳定" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
+LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"hello" message:@"are you ready" delegate:self cancelButtonTitle:@"cancle" otherButtonTitles:@"yes",nil];
 alert.alertAction = ^(NSInteger buttonIndex){
 NSLog(@"alert:%lu",buttonIndex);
 };
 [alert show];
->>>>>>> cocopods
+
 ```
 
 ### Animation Mode
@@ -88,14 +77,6 @@ NSLog(@"alert:%lu",buttonIndex);
 ```objective-c
 
 typedef NS_ENUM(NSInteger, LCAlertAnimation) {
-<<<<<<< HEAD
-    LCAlertAnimationDefault = 0,
-    LCAlertAnimationFlipHorizontal,
-	LCAlertAnimationFlipVertical,
-};
-
-  alert.alertAnimationStyle = LCAlertAnimationFlipHorizontal;
-=======
 LCAlertAnimationDefault = 0,
 LCAlertAnimationFlipHorizontal,
 LCAlertAnimationFlipVertical,
@@ -118,7 +99,6 @@ alert.alertAction = ^(NSInteger buttonIndex){
 NSLog(@"close tap");
 };
 [alert show];
->>>>>>> cocopods
 
 ```
 
