@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'LCAlertView_Example', :exclusive => true do
+  pod "LCAlertView", :path => "../"
+end
+
+target 'LCAlertView_Tests', :exclusive => true do
+  pod "LCAlertView", :path => "../"
+
+  
+end

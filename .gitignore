@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 _Store
 #########################
 # .gitignore file for Xcode4 and Xcode5 Source projects
@@ -213,6 +214,12 @@ xcuserdata
 
 # Xcode
 .DS_Store
+=======
+# OS X
+.DS_Store
+
+# Xcode
+>>>>>>> cocopods
 build/
 *.pbxuser
 !default.pbxuser
@@ -222,6 +229,7 @@ build/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+<<<<<<< HEAD
 *.xcworkspace
 !default.xcworkspace
 xcuserdata
@@ -231,3 +239,25 @@ DerivedData
 .idea/
 # Pods - for those of you who use CocoaPods
 Pods
+=======
+xcuserdata
+*.xccheckout
+profile
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+
+# Bundler
+.bundle
+
+Carthage
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+# 
+# Note: if you ignore the Pods directory, make sure to uncomment
+# `pod install` in .travis.yml
+#
+# Pods/
+>>>>>>> cocopods

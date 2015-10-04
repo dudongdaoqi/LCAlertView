@@ -1,3 +1,31 @@
+<<<<<<< HEAD
+=======
+# LCAlertView
+
+[![CI Status](http://img.shields.io/travis/xulicheng/LCAlertView.svg?style=flat)](https://travis-ci.org/xulicheng/LCAlertView)
+[![Version](https://img.shields.io/cocoapods/v/LCAlertView.svg?style=flat)](http://cocoapods.org/pods/LCAlertView)
+[![License](https://img.shields.io/cocoapods/l/LCAlertView.svg?style=flat)](http://cocoapods.org/pods/LCAlertView)
+[![Platform](https://img.shields.io/cocoapods/p/LCAlertView.svg?style=flat)](http://cocoapods.org/pods/LCAlertView)
+
+## Usage
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Requirements
+
+ios6.0+
+
+## Installation
+
+LCAlertView is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "LCAlertView"
+```
+
+
+>>>>>>> cocopods
 LCAlertView
 =========
 LCAlertview like the system alertview
@@ -16,6 +44,11 @@ Release
 
 [2.0](https://github.com/dudongdaoqi/LCAlertView/releases/tag/v2.0) ios5.0 ARC
 
+<<<<<<< HEAD
+=======
+[2.1.0](https://github.com/dudongdaoqi/LCAlertView/releases/tag/2.1.0) ios5.0 cocopods
+
+>>>>>>> cocopods
 How To Use
 ----------
 
@@ -30,7 +63,11 @@ LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"hello" message:@"are yo
 
 - (void)alertView:(LCAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
+<<<<<<< HEAD
     NSLog(@"alert:%lu",buttonIndex);
+=======
+NSLog(@"alert:%lu",buttonIndex);
+>>>>>>> cocopods
 }
 ```
 
@@ -38,11 +75,19 @@ LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"hello" message:@"are yo
 
 ```objective-c
 
+<<<<<<< HEAD
     LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"提示" message:@"网路不稳定" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
     alert.alertAction = ^(NSInteger buttonIndex){
         NSLog(@"alert:%lu",buttonIndex);
     };
     [alert show];
+=======
+LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"提示" message:@"网路不稳定" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
+alert.alertAction = ^(NSInteger buttonIndex){
+NSLog(@"alert:%lu",buttonIndex);
+};
+[alert show];
+>>>>>>> cocopods
 ```
 
 ### Animation Mode
@@ -50,12 +95,37 @@ LCAlertView *alert = [[LCAlertView alloc]initWithTitle:@"hello" message:@"are yo
 ```objective-c
 
 typedef NS_ENUM(NSInteger, LCAlertAnimation) {
+<<<<<<< HEAD
     LCAlertAnimationDefault = 0,
     LCAlertAnimationFlipHorizontal,
 	LCAlertAnimationFlipVertical,
 };
 
   alert.alertAnimationStyle = LCAlertAnimationFlipHorizontal;
+=======
+LCAlertAnimationDefault = 0,
+LCAlertAnimationFlipHorizontal,
+LCAlertAnimationFlipVertical,
+};
+
+alert.alertAnimationStyle = LCAlertAnimationFlipHorizontal;
+
+```
+
+### Alert Image
+
+
+```objective-c
+
+LCAlertView *alert = [[LCAlertView alloc]initWithImage:@"watch_bind" closeImage:@"confirm_delete" delegate:self];
+alert.imageAction = ^{
+NSLog(@"image tap");
+};
+alert.alertAction = ^(NSInteger buttonIndex){
+NSLog(@"close tap");
+};
+[alert show];
+>>>>>>> cocopods
 
 ```
 
