@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+ios6.0+
+
 ## Installation
 
 LCAlertView is available through [CocoaPods](http://cocoapods.org). To install
