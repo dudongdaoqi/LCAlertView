@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # LCAlertView
 
 [![CI Status](http://img.shields.io/travis/xulicheng/LCAlertView.svg?style=flat)](https://travis-ci.org/xulicheng/LCAlertView)
@@ -24,8 +22,6 @@ it, simply add the following line to your Podfile:
 pod "LCAlertView"
 ```
 
-
->>>>>>> cocopods
 LCAlertView
 =========
 LCAlertview like the system alertview
@@ -44,11 +40,8 @@ Release
 
 [2.0](https://github.com/dudongdaoqi/LCAlertView/releases/tag/v2.0) ios5.0 ARC
 
-<<<<<<< HEAD
-=======
 [2.1.0](https://github.com/dudongdaoqi/LCAlertView/releases/tag/2.1.0) ios5.0 cocopods
 
->>>>>>> cocopods
 How To Use
 ----------
 
