@@ -59,6 +59,8 @@
 
 @interface LCAlertView()
 
+@property (nonatomic, strong) UILabel* mylabel;
+
 - (void)rotate:(UIInterfaceOrientation) orientation;
 - (void)defaultStyle;
 - (void)defaultHideView;
@@ -75,6 +77,7 @@
 @synthesize message = _message;
 @synthesize alertAnimationStyle = _alertAnimationStyle;
 @synthesize alertAction = _alertAction;
+@synthesize mylabel;
 
 - (id)initWithTitle:(NSString *)title message:(NSString *)message delegate:(id /*<UIAlertViewDelegate>*/)delegate cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION
 {
@@ -102,6 +105,8 @@
         _alertContentLabel.font = [UIFont systemFontOfSize:15.0f];
         _alertContentLabel.text = self.message;
         [self addSubview:_alertContentLabel];
+        
+        [self addSubview:mylabel];
         
         _buttons = [[NSMutableArray alloc]init];
         
